@@ -15,13 +15,33 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="t6N-0K-XKm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.1176470588" green="0.23137254900000001" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t6N-0K-XKm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Ox-y7-wxD"/>
+                            <constraint firstItem="t6N-0K-XKm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="V3h-FQ-WbW"/>
+                            <constraint firstAttribute="bottom" secondItem="t6N-0K-XKm" secondAttribute="bottom" id="nug-SB-3SG"/>
+                            <constraint firstItem="t6N-0K-XKm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rHr-HO-Q2B"/>
+                            <constraint firstItem="t6N-0K-XKm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="twN-jh-orz"/>
+                            <constraint firstItem="t6N-0K-XKm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uS2-6c-t4R"/>
+                            <constraint firstAttribute="bottom" secondItem="t6N-0K-XKm" secondAttribute="bottom" id="va6-0d-Sah"/>
+                            <constraint firstItem="t6N-0K-XKm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vmM-xM-lrn"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="t6N-0K-XKm" id="fjy-hJ-Ese"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="JMs-9O-1gq"/>
             </objects>
-            <point key="canvasLocation" x="109" y="-5"/>
+            <point key="canvasLocation" x="240.57971014492756" y="47.544642857142854"/>
         </scene>
     </scenes>
     <resources>
